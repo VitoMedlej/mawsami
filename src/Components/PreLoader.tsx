@@ -14,45 +14,27 @@ const
 PreLoader = ({data,resImages}:any) => {
   const router= useRouter();
   
-  const cates = resImages?.first ? [resImages?.first , resImages?.second , resImages?.third , resImages?.fourth ,resImages?.fifth] : [
-    'https://ucarecdn.com/4635c19f-1ac8-454f-aaf7-8c67adfe4fd0/WhatsAppImage20230824at191722.jpeg',
-    'https://4.bp.blogspot.com/-Jt0CZBa0r6s/WQoWgzdYryI/AAAAAAAAuE4/WNVqO4RNJEoJZeWAGCCDtT-YdkxV-JaPwCPcB/s640/wholesale%2Bcraft%2Bblanks.JPG',
-    'https://ucarecdn.com/e490c41b-ddd1-4ef1-a06c-b1b0692bd83a/WhatsAppImage20230824at191716.jpeg',
-    'https://ucarecdn.com/bfb9f54b-ee34-4cdc-930c-3a97234595fe/WhatsAppImage20230824at191719.jpeg',
-    'https://ucarecdn.com/d01c6f74-4d3b-46c4-9d31-67966950b09e/WhatsAppImage20230824at191720.jpeg'
-  ];
+  const cates = 
+  
+  // resImages?.first ? [resImages?.first , resImages?.second , resImages?.third , resImages?.fourth ,resImages?.fifth] : [
+  //   'https://i0.wp.com/shoppinglebanese.com/wp-content/uploads/2020/06/Dairy-Products-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%84%D8%A8%D8%A7%D9%86.png?w=660&ssl=1',
+  //   'https://i0.wp.com/shoppinglebanese.com/wp-content/uploads/2020/06/Combo-Offers-%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%83%D9%88%D9%85%D8%A8%D9%88.png?w=660&ssl=1',
+  //   'https://i0.wp.com/shoppinglebanese.com/wp-content/uploads/2020/06/%D9%85%D8%B1%D8%A8%D9%89-jam.png?w=660&ssl=1',
+  //   'https://ucarecdn.com/bfb9f54b-ee34-4cdc-930c-3a97234595fe/WhatsAppImage20230824at191719.jpeg',
+  //   'https://ucarecdn.com/d01c6f74-4d3b-46c4-9d31-67966950b09e/WhatsAppImage20230824at191720.jpeg'
+  // ];
   
   
-  // [{img:'https://ucarecdn.com/4635c19f-1ac8-454f-aaf7-8c67adfe4fd0/WhatsAppImage20230824at191722.jpeg',category:'Cricut machines'},
-  // {img:'https://4.bp.blogspot.com/-Jt0CZBa0r6s/WQoWgzdYryI/AAAAAAAAuE4/WNVqO4RNJEoJZeWAGCCDtT-YdkxV-JaPwCPcB/s640/wholesale%2Bcraft%2Bblanks.JPG',category:'Customizable Blanks'},
-  // {img:'https://ucarecdn.com/e490c41b-ddd1-4ef1-a06c-b1b0692bd83a/WhatsAppImage20230824at191716.jpeg',category:'Hot offers'} ,
-  // {img:'https://ucarecdn.com/bfb9f54b-ee34-4cdc-930c-3a97234595fe/WhatsAppImage20230824at191719.jpeg',category: 'New Arrivals'}  ,
-  // {img:'https://ucarecdn.com/d01c6f74-4d3b-46c4-9d31-67966950b09e/WhatsAppImage20230824at191720.jpeg',category:'Materials'}  ,
+  [{img:'https://ucarecdn.com/687fd25e-ea81-492f-bc1a-a2a0669f84b4/368362857_132782813232408_476171586487259028_n.jpg',category:'Pickles'},
+  {img:'https://ucarecdn.com/349f33dd-f82b-42ff-89f7-7bdbfa15874f/357499238_109376385573051_2323533096997451482_n.jpg',category:'Dairy Products'},
+  {img:'https://ucarecdn.com/237061ab-45c4-4b7c-99b5-e5103612b9ec/371123875_135707726273250_3281640845018484081_n.jpg',category:' Jam'} ,
   
-  // ]
-  // const twinImages =resImages?.categoryImage && resImages?.categoryImage?.length > 1 ? resImages?.categoryImage  :  [{img:'https://ucarecdn.com/e79d337c-b709-4ea4-aec0-6f3403afff1e/WhatsAppImage20230824at191717.jpeg'},{img:'https://ucarecdn.com/3a54db45-c216-4076-996c-3ec4524be8f0/WhatsAppImage20230824at191727.jpeg'}]
+  ]
   return (
     <Box >
       <MainCarousel resImages={resImages}/>
-      <Perks/>
-
     <Container disableGutters className='wrap auto flex' sx={{px:{sm:1},maxWidth:'xl',display:'flex'}}>
-  
-    {/* <Box className='flex auto wrap ' sx={{justifyContent:'space-between',width:'100%',maxWidth:'xl'}}>
-      {
-        resImages?.categoryImage && resImages?.categoryImage.map((img:any)=>{
-          return <Box className='cursor' onClick={()=>router.push('/collection/products')} key={img?.img} sx={{minWidth:'200px',my:1,width:{xs:'99%',sm:'49%',md:'48%'}}}>
-            <img src={img?.img} alt="Category Image Shop Now" className="img" />
-          </Box>
-        })
-      }
-    </Box> */}
 
-     {/* <Box
-                className=' text-center auto center box'
-     
-     sx={{mx:1,width:'100%'}}> */}
-{/* 
         
          <Typography
                 className='sectionTitle text-center auto center box'
@@ -65,28 +47,33 @@ PreLoader = ({data,resImages}:any) => {
                     sm: '1.4em'
                 },
                 flex:1,
+                px:1,
+                pt:4,
                 fontWeight: '300'
             }}>
-               Explore Categories
+              
+              Lebanese Mouneh Combo Offers - عروض كومبو المونة اللبنانية
+
             </Typography>
-          */}
+         
 
-            {/* <Box className='wrap  space-evenly' sx={{width:'100%',my:3,display:{xs:'flex'}}}> */}
+            <Box className='wrap  space-evenly' sx={{width:'100%',my:3,display:{xs:'flex'}}}>
 
-        {/* {cates.map((i:any)=>{
+        {cates.map((i:any)=>{
             return <Box
 
             onClick={()=>router.push(`${i?.category.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
             key={i?.img} className='cursor'
-             sx={{borderRadius:'50%',height:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'},
-             my:2,width:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'}}}>
+             sx={{borderRadius:'50%',height:{xs:'32vw',sm:'24vw',md:'24vw',lg:'15vw'},
+             my:2,width:{xs:'32vw',sm:'24vw',md:'24vw',lg:'15vw'}}}>
                     <img src={i?.img} alt={`${i?.category ,'image'}`} style={{borderRadius:'50%'}} className="img" />
                     <Typography sx={{fontWeight:'500',fontSize:'.65em',textAlign: 'center',px:1}}>
              {i?.category}
             </Typography>
             </Box>
 
-        })} */}
+        })}
+        </Box>
 
 {/* {resImages?.first && <Box
 
@@ -109,6 +96,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
   <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
     Customizable Blanks
   </Typography>
+
 </Box>}
 {resImages?.third && <Box
   onClick={() => router.push(`${'hot-offers'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
@@ -144,18 +132,14 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
      {/* </Box> */}
 
       <Box/>
-        <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(0,10)}/>
+        <HomeProductCollection products={data?.featuredProducts?.slice(0,10)}/>
        
     </Container>
-    <FullscreenPoster/>
-    <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(10,18)}/>
-    <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(18)}/>
-
-    <Testimonials/>
-        
 
         
 
+        
+        {/* <Perks/> */}
         {/* <ContactSection/> */}
   </Box>
   )

@@ -26,11 +26,15 @@ import Btn from '../Btn/Btn';
 
 
 export const categories = [
+    "Pickles",
+    "Olives",
+    "Sauce",
+    "Honey",
+    "Food",
+    "Jam",
     "New Arrivals",
-    "Cats",
-    "Dogs",
-    "Birds",
     "Offers",
+    "Other",
 ]
 export default function Navbar() {
     const {open, setOpen} = useDrawerContext();
@@ -56,13 +60,14 @@ export default function Navbar() {
     return ( <>
      <Box
      id='navy'
-    className='center auto relative  bg flex'
+    className='center auto relative   flex'
         sx={{
             zIndex:12,
         flexWrap: 'wrap',
+                py:0,
                 width:'100%',
                 boxShadow:'none',
-        background:'white',
+        background:'black',
         border: 'none',
         px:0,
         flexGrow: 1
@@ -74,90 +79,31 @@ export default function Navbar() {
     className='center relative  flex'
 
             sx={{
-
                 boxShadow:'none',
-
-                background:'white',
-            // maxWidth: 'lg',
+                background:'black',
                 width:'100%',
-            margin: '0 auto',
+                margin: '0 auto',
         }}>
-                   <Box sx={{px:1,py:.5,display:{xs:'none',md:'flex'}}} className='  bg white'>
-        <Box sx={{maxWidth:'lg',alignItems:'center',justifyContent:'space-between',width:'100%'}} className='bg white  flex   auto'>
-            <Typography sx={{display:'flex',flex:1}} component='p'>
-          Payment in USD and LBP, Rate is determined upon delivery
-        </Typography>
-         
-            <Box
-                sx={{
-                px: 1,
-              
-              
-                color: 'white'
-            }}
-                className='flex text-center  center col auto'>
-
-           
-                <Box sx={{maxWidth:'500px'}} className='align-center flex space-between'>
-                <a href='https://th.bing.com/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgAAAA?pid=ImgDet&rs=1' target='_blank' rel='noopener'>
-
-<Btn sx={{mx:1.5,minWidth:'auto',padding:0,':hover':{background:'transparent'},background:'none'}}>
-<Box sx={{width:'20px',height:'20px'}} className='center auto flex'>
-
-  <img src="https://ucarecdn.com/47c77ab9-77d8-4f0f-b6aa-c39e6ce25ba7/2removebgpreview.png" alt="" className="img" />
-  </Box>
-</Btn>
-</a>
-<a href='https://wa.me/96176358544' target='_blank' rel='noopener'>
-
-<Btn sx={{mx:1.5,minWidth:'auto',padding:0,':hover':{background:'transparent'},background:'none'}}>
-<Box sx={{width:'20px',height:'20px'}} className='center auto flex'>
-
-  <img src="https://ucarecdn.com/80077082-51f1-405a-8723-82076be4f4ff/422022efe5324e93a824b05813a48f5c.png" alt="" className="img" />
-  </Box>
-</Btn>
-</a>
-
-                </Box>
-                </Box>
-                </Box>
-         
-
-            </Box>
+             
             <Toolbar
      id='navy3'
 
-    className='center relative  flex  w100  auto'
+    className=' relative  flex  w100  auto'
 
                 sx={{
+                    justifyContent: 'space-between',
                 
-                background:'white',
-                    maxWidth:'xl',
+                background:'black',
+                    maxWidth:'lg',
                 px:'0 !important',
                 
                 flexWrap: 'wrap'
             }}> 
-                  <Link className='flex center  aling-center items-center '  href='/' color='inherit'>
-
-<Box
-    sx={{
-    mx: {
-        sm: '1em'
-    },
-    width:{xs:'90px',sm: '120px'}
-}}>
-    <img
-        className='img'
-        src={`https://ucarecdn.com/80fdb836-ff38-415a-a359-66a9f41bcb57/279234257_691043618773985_3830166968954566921_n.jpg`}
-        alt="Pets Town logo"/>
-</Box>
-</Link>
+           
                 <Box
                     sx={{
                     px:1,
-                    display:{xs:'flex',md:'none'},
 
-                    flex: 1,
                     flexWrap: 'wrap',
                     justifyContent: {
                         xs: 'right',
@@ -170,42 +116,12 @@ export default function Navbar() {
                         display: {
                             xs: 'flex'
                         },
-                        // justifyContent: 'end'
                     }}
                         className='flex right'>
                              
                         
-{/*                              
-                             <IconButton
-                            onClick={() => router.push('/')}
-                            size="large"
-                            edge="start"
-                            aria-label="menu"
-                            sx={{
-                                margin : '8px',padding:0,
-                            color: 'black',
 
-                            // margin: '0.1em',
-                            display: {
-                                md: 'none'
-                            }
-                        }}>
-                            <AiOutlineHome color='black'/>
-                        </IconButton> */}
-                        <IconButton
-                            onClick={() => setCartOpen(!cartOpen)}
-                            sx={{
-                                margin : '8px',padding:0,
-                            color: 'black'
-                        }}>
-                            {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
-
-                                <CiShoppingCart color='black'/>
-                            {/* </Badge> */}
-                            {/* <Typography>
-                                Cart
-                            </Typography> */}
-                        </IconButton>
+                     
     <IconButton
                             onClick={() => setOpen(!open)}
                             size="large"
@@ -213,13 +129,11 @@ export default function Navbar() {
                             aria-label="menu"
                             sx={{
                             margin : '8px',padding:0,
-                            color: 'black',
+                            color: 'white',
                             // margin: '0.1em',
-                            display: {
-                                md: 'none'
-                            }
+                        
                         }}>
-                            <IoIosMenu color='black'/>
+                            <IoIosMenu color='white'/>
                         </IconButton>
                    
    {/* <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' className='flex decor-none' rel='noopener'>
@@ -238,15 +152,13 @@ export default function Navbar() {
                     </Box>
 
                 </Box>
-  <SearchInput/>
-  <SearchInput
-mobile
-                    /> 
+  {/* <SearchInput/> */}
+  {/* <SearchInput
+mobile/>  */}
 
                 <Box
                     sx={{
                     px:1,
-                    display:{xs:'none',md:'flex'},
 
                     // flex: 1,
                     flexWrap: 'wrap',
@@ -276,41 +188,51 @@ mobile
                           
                         </IconButton> */}
 
-                        <IconButton
-                            onClick={() => setCartOpen(!cartOpen)}
-                            sx={{
-                            color: 'black'
-                        }}>
-                            {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
-                                <CiShoppingCart color='black'/>
-                            {/* </Badge> */}
-                            <Typography sx={{ml:.5}}>
-                                My Cart
-                            </Typography>
-                            </IconButton>
+                    
+                        <Link className='flex center  aling-center items-center '  href='/' color='inherit'>
+
+<Box
+    sx={{
+        flex: 1,
+
+    mx: {
+        sm: '1em'
+    },
+    width:{xs:'90px',sm: '120px'},
+    height:{xs:'90px',sm: '100px'}
+}}>
+    <img
+        className='img'
+        src={`https://ucarecdn.com/c9e0bf93-4371-4dd1-819a-cdc9e364efc2/363347989_1007056764071357_3711776752683714269_n.jpg`}
+        alt="mawsamiyet.elkaa logo"/>
+</Box>
+</Link>
 
 
-
-                            {/* <IconButton
-                            onClick={() => setOpen(!open)}
-                            edge="start"
-                            aria-label="menu"
-                            sx={{
-                            color: 'black',
-                            // margin: '0.1em',
-                         
-                        }}>
-                            <IoIosMenu color='black'/>
-                        </IconButton> */}
+                    
                     
                     </Box>
-
+       
                 </Box>
-           
-<SearchModal openModal={openModal} setOpenModal={setOpenModal }/>
-<NavButtom/>
+                <IconButton
+                            onClick={() => setCartOpen(!cartOpen)}
+                            sx={{
+
+                                mr:1,
+                                color: 'white'
+                        }}>
+                                <Typography sx={{px:1}}>
+                                    0$
+                                </Typography>
+                            <Badge color='primary' badgeContent={`${localCart.length || '0'}`}>
+                                <CiShoppingCart color='white'/>
+                            </Badge>
+                            </IconButton>
+{/* <SearchModal openModal={openModal} setOpenModal={setOpenModal }/> */}
              
             </Toolbar>
+<NavButtom/>
+
         </AppBar>
     </Box> 
 

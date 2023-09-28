@@ -10,27 +10,23 @@ const HomeProductCollection = ({products} : {products:IProduct[] | never[]}) => 
  const router = useRouter()
   return (
     <Box sx={{my:4}} className='center auto'>
-            <Typography
-                className='sectionTitle  text-center center auto box'
+           <Typography
+                className='sectionTitle text-center auto center box'
                 sx={{
+                  pt:'4em',
                   pb:'.5em',
-                px:1,
-                pt:9,
-                  textAlign:'center !important',
+                  // pt:9,
+                  display:'flex',
                 fontSize: {
-                    xs: '1.42em',
-                    sm: '2em'
+                    xs: '1.2em',
+                    sm: '1.4em'
                 },
-                fontWeight: '600'
+                flex:1,
+                fontWeight: '300'
             }}>
-                View Our Latest Products
+              All Products - جميع المونة
             </Typography>
-            <Btn v2
-            className='auto shadow1' 
-            onClick={()=>router.push('/collection/products')}
-            >
-              View All
-            </Btn>
+   
               <Box sx={{mb:2,mt:4}} className='flex wrap gap1 justify-center'>
                   {products && products?.length > 0 && products.map(i=>{
 

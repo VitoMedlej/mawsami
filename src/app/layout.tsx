@@ -8,8 +8,8 @@ import QuickCart from '@/Components/Shared/QuickCart/QuickCart'
 import ContextWrapper from '@/context/Contexts'
 
 export const metadata = {
-    title: 'PetsTown - Shop Pet Supplies in Lebanon',
-    description: `Discover a wide range of pet supplies at PetsTown, your local pet shop in Lebanon. We offer quality products for dogs, cats, birds, and more.`,
+    title: 'Mawsamiyet: A Taste of Lebanons Natural Bounty',
+    description: `From breakfast tables to festive gatherings, Mawsamiyet has become a staple in Lebanese households and a trusted choice among food enthusiasts`,
     icons: {
         icon: `https://ucarecdn.com/f21fe250-e19c-4fd7-b4e7-bf1b246a3640/favicon.jpeg`
     }
@@ -23,7 +23,7 @@ export default function RootLayout({children} : {
             <head>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,400;1,500&display=swap" rel="stylesheet"/>
             </head>
 
             <body className='relative'>

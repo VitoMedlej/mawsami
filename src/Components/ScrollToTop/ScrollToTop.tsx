@@ -27,7 +27,7 @@ const ScrollUp = () => {
     <Btn sx={{ border:'1px solid transparent',boxShadow:'none',
     borderRadius:25,
     padding:0,':hover':{background:'none'},background:'none'}}>
-      <Box className='center flex align-center' sx={{width:'30px'}}>
+      <Box className='center flex align-center' sx={{width:'45px'}}>
 
       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="" className="img" />
       </Box>

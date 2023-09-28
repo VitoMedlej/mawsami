@@ -8,90 +8,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import { AiOutlineArrowUp } from 'react-icons/ai'; // Assuming you've imported the AiOutlineArrowUp icon
 import { Box } from '@mui/material';
 import { useRouter } from 'next/navigation';
+import { categories } from '../Navbar/Navbar';
 
-export const AllCats =  [
-    {
-      categoryName: "dogs",
-      categoryItems: [
-        {
-          Category: "Food",
-          Subcategories: ["Dry food", "Wet food"]
-        },
-        {
-          Category: "Treats",
-          Subcategories: ["Casual treats", "Training treats", "Dental treats", "Bones"]
-        },
-        {
-          Category: "Toys",
-          Subcategories: ["Casual toys", "Interactive toys", "Kong"]
-        },
-        {
-          Category: "Apparels",
-          Subcategories: ["Leashes", "Collars", "Harnesses", "Clothes", "Scarfs"]
-        },
-        {
-          Category: "Beds and Houses",
-          Subcategories: ["Beds", "Crates"]
-        },
-        {
-          Category: "Grooming Essentials",
-          Subcategories: ["Brushes", "Nail clippers", "Perfumes", "Shampoos", "Hygiene accessories"]
-        },
-        {
-          Category: "Medication",
-          Subcategories: ["Ticks & Fleas", "Oral health", "Supplements"]
-        },
-        {
-          Category: "Accessories",
-          Subcategories: ["Bowls & Feeders", "Muzzles"]
-        }
-      ]
-    },
-    {
-      categoryName: "cats",
-      categoryItems: [
-        {
-          Category: "Food",
-          Subcategories: ["Dry food", "Wet food"]
-        },
-        {
-          Category: "Litter",
-          Subcategories: []
-        },
-        {
-          Category: "Scratchers",
-          Subcategories: []
-        },
-        {
-          Category: "Treats",
-          Subcategories: ["Wet treats", "Casual treats"]
-        },
-        {
-          Category: "Toys",
-          Subcategories: ["Casual toys", "Interactive toys", "Kong"]
-        },
-        {
-          Category: "Apparels",
-          Subcategories: ["Leashes", "Collars", "Harnesses", "Clothes", "Scarfs"]
-        },
-        {
-          Category: "Beds and Houses",
-          Subcategories: ["Beds", "Crates"]
-        },
-        {
-          Category: "Grooming Essentials",
-          Subcategories: ["Brushes", "Nail clippers", "Perfumes", "Shampoos", "Hygiene accessories"]
-        },
-        {
-          Category: "Medication",
-          Subcategories: ["Ticks & Fleas", "Oral health", "Supplements"]
-        },
-        {
-          Category: "Accessories",
-          Subcategories: ["Bowls & Feeders"]
-        }
-      ]
-    }]
+
 
     function NestedMenuAccordion({toggleDrawer}:any) {
         const [open, setOpen] = useState(false);
@@ -105,9 +24,9 @@ export const AllCats =  [
         return (
           <Box sx={{ border: 'none', boxShadow: 'none' }}>
             <List disablePadding>
-              {AllCats.map((mainCategory) => (
+              {categories.map((mainCategory) => (
                 <Accordion
-                  key={mainCategory.categoryName}
+                  key={mainCategory}
                   sx={{ border: 'none', boxShadow: 'none' }}
                 >
                   <AccordionSummary
@@ -117,48 +36,10 @@ export const AllCats =  [
                     // onClick={() => setSelectedCategory(mainCategory.categoryName)}
                   >
                     <Typography sx={{ fontWeight: 600, textTransform: 'capitalize' }}>
-                      {mainCategory.categoryName}
+                      {mainCategory}
                     </Typography>
                   </AccordionSummary>
-                  <AccordionDetails>
-                    {mainCategory.categoryItems.map((subcategory) => (
-                      <Accordion
-                        key={subcategory.Category}
-                        sx={{ border: 'none', boxShadow: 'none' }}
-                      >
-                        <AccordionSummary
-                          expandIcon={<AiOutlineArrowUp />}
-                          aria-controls="panel1a-content"
-                          id="panel1a-header"
-                        >
-                          <Typography sx={{ fontWeight: 600 }}>
-                            {subcategory.Category}
-                          </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          {
-                            <List>
-                                       <ListItemButton
-                                  onClick={() =>handleRoute(subcategory.Category,mainCategory.categoryName)}
-                                >
-                                  <Typography>All {subcategory.Category}</Typography>
-                                </ListItemButton>
-                              {subcategory.Subcategories.map((type) => (
-                                <ListItemButton
-                                  key={type}
-                                  onClick={() => 
-                                    handleRoute(subcategory.Category,mainCategory.categoryName,type)
-                                }
-                                >
-                                  <Typography>{type}</Typography>
-                                </ListItemButton>
-                              ))}
-                            </List>
-                          }
-                        </AccordionDetails>
-                      </Accordion>
-                    ))}
-                  </AccordionDetails>
+                
                 </Accordion>
               ))}
             </List>
