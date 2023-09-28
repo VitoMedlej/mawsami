@@ -23,7 +23,7 @@ const Footer = () => (
             </Link>
           </div>
           <Typography component='h1' sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
-          Explore our diverse range of natural food products and savor the authentic flavors of Lebanon. Mawsamiyet invites you to embark on a culinary journey, where every bite is a celebration of nature's finest. Connect with us today to experience the true taste of Lebanon, right from the heart of Al Qaa, Baalbeck.
+          Explore our diverse range of natural food products and savor the authentic flavors of Lebanon. Mawsamiyet invites you to embark on a culinary journey, where every bite is a celebration of nature&apos;s finest. Connect with us today to experience the true taste of Lebanon, right from the heart of Al Qaa, Baalbeck.
           </Typography>
           <SMicons/>
 
@@ -46,7 +46,7 @@ const Footer = () => (
             <li><Link href="/collection/products">All Products</Link></li> 
             <li><Link href="/cart">Cart</Link></li>
             <li><Link href="/checkout">checkout</Link></li>
-            <li><Link href="https://wa.me/+96171984678">Contact Us</Link></li>
+            <li><Link href="https://wa.me/+96171707376">Contact Us</Link></li>
           </ul>
      
           <ul  className='ul-white' style={{color:'black'}}>

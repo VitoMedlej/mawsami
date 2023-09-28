@@ -29,7 +29,7 @@ const HoverMenu = ({ category, subcategories ,img } : {img:string,category: stri
         }}>
     
       <Typography 
-      className=' cursor center flex gap1 black decor-none uppercase'
+      className=' white cursor center flex gap1  decor-none uppercase'
         id="button"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -47,10 +47,11 @@ const HoverMenu = ({ category, subcategories ,img } : {img:string,category: stri
         className='flex '
           id="menu"
           sx={{
+            maxWidth:'lg',
             zIndex:12345678,
       boxShadow: '1px 1px 3px #00000017',
             position:'absolute',
-            width: '100%',
+           
             minHeight: '350px',
             maxHeight:'600px',
             left:0,
@@ -81,8 +82,8 @@ const HoverMenu = ({ category, subcategories ,img } : {img:string,category: stri
           </ul> */}
         <NestedMenuAccordion/>
 
-          <Box  sx={{pointerEvents:'none',cursor:'none', width:'70%',height:'100%',minHeight:'350px'}}>
-            <img src={`${img}`} alt="Category Image" className="img " />
+          <Box  sx={{pointerEvents:'none',cursor:'none', width:'60%',height:{xs:'100%',sm:'400px'},minHeight:'350px'}}>
+            <img src={`${img}`} alt="Category Image" className="img contain " />
           </Box>
         </Box>
       )}

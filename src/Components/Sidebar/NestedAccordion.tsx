@@ -26,19 +26,15 @@ import { categories } from '../Navbar/Navbar';
             <List disablePadding>
               {categories.map((mainCategory) => (
                 <Accordion
+                onClick={()=>router.push(`/${encodeURIComponent(mainCategory.toLocaleLowerCase())}/products`)}
+                className='cursor '
                   key={mainCategory}
-                  sx={{ border: 'none', boxShadow: 'none' }}
+                  sx={{ border: 'none',py:1.5,px:3, boxShadow: 'none' }}
                 >
-                  <AccordionSummary
-                    expandIcon={<AiOutlineArrowUp />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                    // onClick={() => setSelectedCategory(mainCategory.categoryName)}
-                  >
-                    <Typography sx={{ fontWeight: 600, textTransform: 'capitalize' }}>
+                
+                    <Typography sx={{ fontWeight: 500, textTransform: 'capitalize' }}>
                       {mainCategory}
                     </Typography>
-                  </AccordionSummary>
                 
                 </Accordion>
               ))}

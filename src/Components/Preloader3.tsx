@@ -87,7 +87,7 @@ const Preloader3 = ({res}:{res:any}) => {
                         </Box>
                         <Box sx={{position:'absolute',px:1}}  className="absolute flex col center auto items-center text-center">
                                 <Typography sx={{color:"white",textShadow:'1px 1px black',fontSize:{xs:'2em',sm:'3em'},fontWeight:600,maxWidth:'600px'}}>
-                                 A Taste of Lebanon's Natural Bounty By Mawsamiyet
+                                 A Taste of Lebanon&apos;s Natural Bounty By Mawsamiyet
                                 </Typography>
                                 <Btn
                                 onClick={()=>router.push('/collection/products')}>

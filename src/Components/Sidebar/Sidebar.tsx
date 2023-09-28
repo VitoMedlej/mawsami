@@ -67,7 +67,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
             
-                  <Typography sx={{fontWeight:600}}>
+                  <Typography sx={{fontWeight:500}}>
               All Products
             </Typography>
             </ListItemButton>
@@ -81,7 +81,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
            disablePadding>
               <ListItemButton sx={{py:1}} >
             
-                  <Typography sx={{fontWeight:600}}>
+                  <Typography sx={{fontWeight:500}}>
              New Arrivals
             </Typography>
             </ListItemButton>
