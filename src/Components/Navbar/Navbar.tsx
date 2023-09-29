@@ -221,9 +221,9 @@ mobile/>  */}
                                 mr:1,
                                 color: 'white'
                         }}>
-                                <Typography sx={{px:1}}>
+                                {/* <Typography sx={{px:1}}>
                                     0$
-                                </Typography>
+                                </Typography> */}
                             <Badge color='primary' badgeContent={`${localCart.length || '0'}`}>
                                 <CiShoppingCart color='white'/>
                             </Badge>

@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import {Typography , Box, Divider } from '@mui/material'
+import {Typography } from '@mui/material'
 import './style.css'
 import SMicons from '../SMicons/SMicons';
 // import SMicons from './SMicons';
@@ -9,7 +9,6 @@ import SMicons from '../SMicons/SMicons';
 
 const Footer = () => (
   <footer className="site-footer " style={{color:'black',background:'white'}}>
-    <Divider></Divider>
     <div className="container " style={{color:'black',background:'white'}}>
       <div className="site-footer__top ">
         <div className="site-footer__description">
@@ -45,8 +44,7 @@ const Footer = () => (
             <li><Link  href="/">Home</Link></li>
             <li><Link href="/collection/products">All Products</Link></li> 
             <li><Link href="/cart">Cart</Link></li>
-            <li><Link href="/checkout">checkout</Link></li>
-            <li><Link href="https://wa.me/+96171707376">Contact Us</Link></li>
+            <li><Link href="https://wa.me/+96171707376">Whatsapp</Link></li>
           </ul>
      
           <ul  className='ul-white' style={{color:'black'}}>

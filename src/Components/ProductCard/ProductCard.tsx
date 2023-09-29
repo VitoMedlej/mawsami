@@ -105,15 +105,17 @@ const ProductCard = ({
                     
                     sx={{
                         // color:'white',
-                   
+                        color :'#07070757',
+                        background:'white',
+                        border:'1px solid',
                     // borderRadius:'8',
                   
                  
                 }}>
-                    <Box  className="flex">
+                    <Box sx={{fontWeight:500}} className="flex">
 
-                    ADD
                     <BiCartAdd fontSize='20px'/>
+                    Add
                     </Box>
                 </Btn>
                 

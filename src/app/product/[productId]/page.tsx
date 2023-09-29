@@ -111,7 +111,9 @@ const Index = () => {
                      onClick={()=>addToCart(selectedQuantity,`${data?.product?._id}`,{title : data.product.title ,category: data.product.category,img:data.product.images[0], _id : data.product._id,price:data.product.price, selectedColor},true,true)}
              
               sx={{gap:.5,
-                borderRadius:25,
+                color :'#07070757',
+                background:'white',
+                border:'1px solid',
              width:{xs:'100%',sm:'49%' }}}>
                  Add To Cart
                  <AiOutlineShoppingCart  fontSize={'medium'}/>

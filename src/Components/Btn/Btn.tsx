@@ -6,9 +6,9 @@ import React from 'react'
 
 let style1 = {
   color: 'white',
-  background: '#ff9715',
+  background: '#f8a41d',
   border: 'none',
-  borderRadius: '8px', 
+  borderRadius: '2px', 
   transition: 'background 0.3s ease, transform 0.2s ease',
 
   ':hover': {
@@ -23,10 +23,10 @@ let style1 = {
   outline: 'none',
 }
 let style2 = {
-  color: '#ff9715',
+  color: '#f8a41d',
   background: 'transparent',
   border: 'none',
-  borderRadius: '8px', 
+  borderRadius: '2px', 
   // boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   transition: 'background 0.3s ease, transform 0.2s ease',
 

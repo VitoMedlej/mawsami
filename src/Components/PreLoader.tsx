@@ -57,15 +57,15 @@ PreLoader = ({data,resImages}:any) => {
             </Typography>
          
 
-            <Box className='wrap  space-evenly' sx={{width:'100%',my:3,display:{xs:'flex'}}}>
+            <Box className='wrap  space-evenly' sx={{width:'100%',mx:1,my:3,display:{xs:'flex'}}}>
 
         {cates.map((i:any)=>{
             return <Box
 
             onClick={()=>router.push(`${i?.category.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
             key={i?.img} className='cursor'
-             sx={{borderRadius:'50%',height:{xs:'32vw',sm:'24vw',md:'24vw',lg:'15vw'},
-             my:2,width:{xs:'32vw',sm:'24vw',md:'24vw',lg:'15vw'}}}>
+             sx={{borderRadius:'50%',height:{xs:'31vw',sm:'24vw',md:'24vw',lg:'15vw'},
+             my:2,width:{xs:'31vw',sm:'24vw',md:'24vw',lg:'15vw'}}}>
                     <img src={i?.img} alt={`${i?.category ,'image'}`} style={{borderRadius:'50%'}} className="img" />
                     <Typography sx={{fontWeight:'500',fontSize:'.65em',textAlign: 'center',px:1}}>
              {i?.category}

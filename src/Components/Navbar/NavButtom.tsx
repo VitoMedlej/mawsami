@@ -46,7 +46,7 @@ component='p' sx={{width:'max-content',
 mx:'1em',
 alignItems: 'center',
 
-fontWeight:600,fontSize:{xs:'.6em',sm:'.75em'}}}>
+fontWeight:600,fontSize:{xs:'.6em',sm:'.85em'}}}>
 Collections
 </Typography>
 </Link>
@@ -59,7 +59,7 @@ component='p' sx={{width:'max-content',
 alignItems: 'center',
 mx:'1em',
 
-fontWeight:600,fontSize:{xs:'.6em',sm:'.75em'}}}>
+fontWeight:600,fontSize:{xs:'.6em',sm:'.85em'}}}>
 New Arrivals
 </Typography>
 </Link>
@@ -72,7 +72,7 @@ New Arrivals
         mx:'1em',
         alignItems: 'center',
         
-        fontWeight:600,fontSize:{xs:'.6em',sm:'.75em'}}}>
+        fontWeight:600,fontSize:{xs:'.6em',sm:'.85em'}}}>
      Birds
    </Typography>
    </Link> */}
@@ -84,7 +84,7 @@ New Arrivals
     // {cate:"Offers",subCate:offersSubcategories,img:'https://i.pinimg.com/originals/bf/cb/59/bfcb59f20bddc43101e39de2cc142f7e.jpg'}
 ].map(i => {
                 // return <Link className='clr decor-none uppercase' key={i} href={`/${i.replace(/ /g, '-').toLocaleLowerCase()}/products`}>
-                //     <Typography  component='p' sx={{width:'max-content',fontWeight:600,fontSize:{xs:'.6em',sm:'.75em'}}}>                    
+                //     <Typography  component='p' sx={{width:'max-content',fontWeight:600,fontSize:{xs:'.6em',sm:'.85em'}}}>                    
                 //     {i}
                 //     </Typography>
                 // </Link>
@@ -100,7 +100,7 @@ component='p' sx={{width:'max-content',
 alignItems: 'center',
 mx:'1em',
 
-fontWeight:600,fontSize:{xs:'.6em',sm:'.75em'}}}>
+fontWeight:600,fontSize:{xs:'.6em',sm:'.85em'}}}>
 Offers
 </Typography>
 </Link>
