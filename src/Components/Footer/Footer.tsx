@@ -12,16 +12,8 @@ const Footer = () => (
     <div className="container " style={{color:'black',background:'white'}}>
       <div className="site-footer__top ">
         <div className="site-footer__description">
-          <div className='logos cursor'>
-
-            <Link href="/">
-              {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
-              {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
-              {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/c9e0bf93-4371-4dd1-819a-cdc9e364efc2/363347989_1007056764071357_3711776752683714269_n.jpg' alt="Mawsamiet Lebanon Logo" />
-            </Link>
-          </div>
-          <Typography component='h1' sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
+    
+          <Typography component='h1' sx={{ fontSize: '1.15em',color:"black",fontWeight:300 }}  className='footer-p '>
           Explore our diverse range of natural food products and savor the authentic flavors of Lebanon. Mawsamiyet invites you to embark on a culinary journey, where every bite is a celebration of nature&apos;s finest. Connect with us today to experience the true taste of Lebanon, right from the heart of Al Qaa, Baalbeck.
           </Typography>
           <SMicons/>
