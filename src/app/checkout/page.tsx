@@ -87,7 +87,7 @@ export default function Checkout() {
 
     const handleNext = () => {
       if (info && info.firstName && info.lastName && info.address1 && info.phone && info.city && info.address2) {
-        saveState('sgh2j40-b12fg',info)
+        saveState('r124vi120dj12-rvfq',info)
         setActiveStep(activeStep + 1);
       
       } 
@@ -118,7 +118,7 @@ export default function Checkout() {
             body: JSON.stringify({order:{info,products,total}})
         });
   const content = await rawResponse.json();
-  saveState('sgh2j40-b12fg',null)
+  saveState('r124vi120dj12-rvfq',null)
   saveState('sgh2j40-tlsit',null)
 
 }

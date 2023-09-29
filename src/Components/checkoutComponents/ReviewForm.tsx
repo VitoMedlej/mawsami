@@ -42,7 +42,7 @@ export default function Review({setActiveStep}:{setActiveStep:any}) {
 
   const products = loadState('sgh2j40-tlsit')
  
-  const info = loadState('sgh2j40-b12fg')
+  const info = loadState('r124vi120dj12-rvfq')
 
   const total = totalCal(products);
   if (!info) {
@@ -88,9 +88,9 @@ export default function Review({setActiveStep}:{setActiveStep:any}) {
         </ListItem>
       </List>
       <Grid container spacing={2}>
-        <Typography variant="h6" gutterBottom color='green' sx={{fontSize:'.9em', mx: 2,my:2 }}>
+        {/* <Typography variant="h6" gutterBottom color='green' sx={{fontSize:'.9em', mx: 2,my:2 }}>
           NOTE: Delivery charge for orders that exceed 25KG will be charged extra.
-          </Typography>
+          </Typography> */}
         <Grid item xs={12} sm={6}>
           <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
           Order Summary 
